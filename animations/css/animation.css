@@ -3,18 +3,46 @@ body {
   padding: 30px;
 }
 
+#name {
 
-.male-female {
+}
+
+
+#male {
+  height: 300px;
+  width: 300px;
+  display: block;
+  background: url('images/m.png') left center;
+  animation: male 0.8s infinite;
+}
+
+#female {
+  height: 300px;
+  width: 300px;
+  display: block;
+  background: url('images/f.png') left center;
+  animation: female 0.8s infinite;
+  opacity:0;
+}
+
+/*#male-female {
   width: 720px;
   height: 720px;
   display: block;
   margin: 2% auto;
   background: url('images/male.png') left center;
   animation: play 0.8s steps(8) infinite;
-}
+}*/
 
 
-@-webkit-keyframes play {
-   from { background-position: 0px; }
-   to { background-position: -288px; }
-}
+@keyframes male {
+  100% {
+   transform: scale(0.1);
+   opacity: 0;
+ }
+
+ @keyframes female {
+   100% {
+    transform: scale(0.1);
+    opacity: 1;
+  }

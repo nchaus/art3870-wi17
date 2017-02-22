@@ -1,18 +1,17 @@
 /* Nilufar's Animation Stylesheet */
 body {
   padding: 30px;
-}
-
-#name {
-
+  color: black;
 }
 
 
+
+/* seperate image transition attempt
 #male {
   height: 300px;
   width: 300px;
   display: block;
-  background: url('images/m.png') left center;
+  background-image: url("images/m.png");
   animation: male 0.8s infinite;
 }
 
@@ -20,29 +19,49 @@ body {
   height: 300px;
   width: 300px;
   display: block;
-  background: url('images/f.png') left center;
+  background-image: url("images/f.png");
   animation: female 0.8s infinite;
-  opacity:0;
+  opacity:0;}
+
+
+
+  @keyframes male {
+    100% {background-position:-23000;
+     opacity: 0;
+   }
+
+   @keyframes female {
+     100% {background-position:-23000;
+      opacity: 1;
+    }
+  */
+  /* red box test
+  #females {
+    border: 10px solid red;
+    height: 200px;
+    width: 200px;
+  }  */
+/*functioning animation male symbol to female symbol----START*/
+.male-female {
+  //border: 1px solid red;
+  width: 700px;
+  height:864px;
+  background: url("../images/final.png") 0 0 no-repeat;
+  display:inline-block;
+  clear:both;
+  -webkit-animation: females 2s steps(11) infinite;
+
 }
 
-/*#male-female {
-  width: 720px;
-  height: 720px;
-  display: block;
-  margin: 2% auto;
-  background: url('images/male.png') left center;
-  animation: play 0.8s steps(8) infinite;
-}*/
 
+@-webkit-keyframes females {
+  100% {background-position:-7724px;
+   }
+/*functioning animation male symbol to female symbol ---END*/
 
-@keyframes male {
-  100% {
-   transform: scale(0.1);
-   opacity: 0;
- }
+.view-first {
+  border: 10px solid blue;
+  width:200px;
+  height: 300px;
 
- @keyframes female {
-   100% {
-    transform: scale(0.1);
-    opacity: 1;
-  }
+}

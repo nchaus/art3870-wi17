@@ -91,6 +91,7 @@ h2{
 
 #person{
   border: 1px solid darkblue;
-  top:400px;
-  left:4500px;
+  top:600px;
+  left:4950px;
+  display:none;
 }

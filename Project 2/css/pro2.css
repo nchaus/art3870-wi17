@@ -1,8 +1,7 @@
 
 #wrapper{
   width:10000px;
-  height:700px;
-  border:1px solid green;
+  height:1000px;
   position:relative;
   margin:0 auto;
   background: /*background START*/
@@ -15,83 +14,99 @@
   background: linear-gradient(to right, rgba(35,117,190,1) 0%, rgba(27,75,156,1) 10%, rgba(15,9,102,1) 26%, rgba(44,17,85,1) 70%, rgba(67,30,121,1) 83%, rgba(70,32,126,1) 85%, rgba(44,17,85,1) 96%, rgba(44,17,85,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2375be', endColorstr='#2c1155', GradientType=1 );
 
-  /*background END*/
+  /*background COLOR END*/
 
 }
 
 
-/*passing cars START*/
+/*passing cars START
 h1, img{
   height:50px;
   width:50px;
   border:1px solid red;
   position:absolute;
+}*/
+
+#road{
+  position:absolute;
+  top:950px;
+  bottom:1000px;
 }
 
-/*my car/bear*/
-#one{
-    background:blue;
-    top:600px;
+#person{
+  postion: absolute;
+  border: 1px solid darkblue;
+  top:600px;
+  left:4990px;
+  height: 300px;
+  width: 300px;
+  background-color: red;
+}
+
+
+#one{/*purple car*/
+    position:absolute;
+    height:150px;
+    width:552px;
+    top:1000px;
     left:50px;
     right:4500px;
   }
 
 
-#two{
-    background:yellow;
-    top:550px;
+#two{/*red car*/
+    position:absolute;
+    height:150px;
+    width:552px;
+    top:900px;
     left:75px;
     right:3550px;
   }
 
 
-#three{
-    background:orange;
-    top:600px;
+#three{/*green car*/
+    position:absolute;
+    height:150px;
+    width:552px;
+    top:1100px;
     left:100px;
     right:2500px;}
 /*passing cars END*/
 
-
-
-
-/*passing trees in the background START*/
-h2{
-  width:500px;
-  height:100px;
-  border:1px solid pink;
+#truck{
   position:absolute;
+  height:160px;
+  width:562px;
+  top:1000px;
+  right:4000px;
 }
 
-#t1{
-  background:green;
-  top:500px;
-  left:200px;
-    }
 
-#t2{
-  background:green;
-  top:500px;
+/*passing trees in the background START}*/
+
+#t1 #t2 #t3 #t4 {
+  position:absolute;
+  height:500px;
+  width:400px;
+  top:800px;
   left:400px;
     }
 
-#t3{
-  background:green;
-  top:500px;
-  left:600px;
-    }
-
 #t4{
-  background:green;
-  top:500px;
-  left:800px;
-        }
-/*passing trees in the background END*/
+    position:fixed;
+    top:800px;
+    left:3500px;
+    background: url("../images/t41.png") 0 0 no-repeat;
+    display:inline-block;
+    clear:both;
+    -webkit-animation: owl 0.5s steps(4) infinite;
+
+  }
 
 
-#person{
-  border: 1px solid darkblue;
-  top:600px;
-  left:4950px;
-  display:none;
+  @-webkit-keyframes owl {
+    100% {background-position:-7724px;
+     }
 }
+
+/*passing trees in the background END*/

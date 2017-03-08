@@ -15,7 +15,7 @@ $(window).scroll(function(){
    //update the variable fromLeft to the current pixels count
    // fromLeft = $(window).scrollLeft();
 
-   console.log("oh glorious Queen, you are " + fromLeft + " times more astronomical!");
+   console.log("cars going by" + fromLeft );
 
    if(fromLeft < 4500 ){
      console.log("going backwards, are we?");
@@ -35,7 +35,7 @@ $("#person").css({"display":"none" });
    }
 
    if(fromLeft > 4501 && fromLeft < 5000){
-     console.log("oh Queen, you have scrolled so far, you must be tired!");
+     console.log("Person starts flying" + fromLeft + " times more astronomical!");
 
      $("#person").css({
                       "left" : 75 + fromLeft *1.1 + "px",
@@ -48,11 +48,12 @@ $("#person").css({"display":"none" });
                              "display":"block"
                      });
    }
+/*
 
    if(fromLeft > 5001 && fromLeft < 7500){
-     console.log("oh Queen, you have scrolled so far, you must be tired!");
 
-     $("#person").css({
+
+    $("#person").css({
                       "left" : 75 + fromLeft *1.1 + "px",
                       "top":600 - fromLeft * 0.01 + "px",
                       "display":"block"
@@ -61,7 +62,7 @@ $("#person").css({"display":"none" });
                       "top":100 - fromLeft * 0.01 + "px",
                       "left": 800 + fromLeft *1.1 + "px",
                              "display":"block"
-                     });
+                  });
    }
 
 
@@ -95,7 +96,7 @@ $("#person").css({"display":"none" });
 
    }
 
-
+*/
 
 
 

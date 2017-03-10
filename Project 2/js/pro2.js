@@ -28,44 +28,33 @@ $(window).scroll(function(){
      $("#t2").css({"left" : 400 + fromLeft * .8 + "px"});
      $("#t3").css({"left" : 600 + fromLeft * .8 + "px"});
      $("#t4").css({"left" : 800 + fromLeft * .8 + "px"});
-
+//dark cloud passing
+     $("#cloud").css({"left" : -490 +fromLeft *0.12 + "px"});
 // person reset
-$("#person").css({"display":"none" });
-
+     $("#person").css({"display":"none" });
    }
 
-   if(fromLeft > 4501 && fromLeft < 5000){
+ if(fromLeft > 4501 && fromLeft < 5000){
      console.log("Person starts flying" + fromLeft + " times more astronomical!");
 
-     $("#person").css({
-                      "left" : 75 + fromLeft *1.1 + "px",
-                      "top":600 - fromLeft * 0.01 + "px",
+     $("#person").css({"left" : 200 + fromLeft *1.1 + "px",
+                      "top":1200 - fromLeft * 0.08 + "px",
                       "display":"block"
                       });
-      $("#cloud").css({
-                      "top":100 - fromLeft * 0.01 + "px",
+      $("#cloud").css({"top":100 - fromLeft * 0.01 + "px",
                       "left": 800 + fromLeft *1.1 + "px",
                              "display":"block"
                      });
    }
-/*
-
-   if(fromLeft > 5001 && fromLeft < 7500){
 
 
-    $("#person").css({
-                      "left" : 75 + fromLeft *1.1 + "px",
-                      "top":600 - fromLeft * 0.01 + "px",
+ if(fromLeft > 5001 && fromLeft < 7500){
+    $("#person").css({"left" : 200 + fromLeft *1.1 + "px",
+                      "top":1199 - fromLeft * 0.08 + "px",
                       "display":"block"
                       });
-      $("#cloud").css({
-                      "top":100 - fromLeft * 0.01 + "px",
-                      "left": 800 + fromLeft *1.1 + "px",
-                             "display":"block"
-                  });
+
    }
-
-
 
 
 
@@ -86,20 +75,10 @@ $("#person").css({"display":"none" });
                       "top":"0",
                       "display":"block"
                       });
-   }
 
 
 
-   if(fromLeft > 4600 ){
-//person flying
-    // $("#person").css({"left" : 4600 + fromLeft * .6 + "px"});
 
    }
-
-*/
-
-
-
-
-       })//close .scroll
+       })//close.scroll
    });//close .ready

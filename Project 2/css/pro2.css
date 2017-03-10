@@ -1,3 +1,9 @@
+html, body {
+margin: 0 auto;
+padding: 0;
+height: 100%;
+}
+
 
 #wrapper{
   width:10000px;
@@ -18,29 +24,19 @@
 
 }
 
-
-/*passing cars START
-h1, img{
-  height:50px;
-  width:50px;
-  border:1px solid red;
-  position:absolute;
-}*/
-
 #road{
-  position:absolute;
+  position:fixed;
   top:950px;
   bottom:1000px;
 }
 
 #person{
-  postion: absolute;
-  border: 1px solid darkblue;
-  top:600px;
-  left:4990px;
-  height: 300px;
-  width: 300px;
-  background-color: red;
+  position:absolute;
+  height: 90px;
+  width: 90px;
+  top:1000px;
+  left:4499px;
+
 }
 
 
@@ -93,20 +89,29 @@ h1, img{
     }
 
 #t4{
-    position:fixed;
+    position:absolute;
     top:800px;
     left:3500px;
     background: url("../images/t41.png") 0 0 no-repeat;
     display:inline-block;
     clear:both;
-    -webkit-animation: owl 0.5s steps(4) infinite;
+    -webkit-animation: owl .8s steps(4) infinite;
 
   }
 
-
-  @-webkit-keyframes owl {
+  @-keyframes owl {
     100% {background-position:-7724px;
      }
 }
 
 /*passing trees in the background END*/
+
+#cloud{
+  position:fixed;
+  height:250px;
+  width:500px;
+  top:15px;
+  left:-490px;
+
+
+}

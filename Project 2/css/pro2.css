@@ -133,5 +133,20 @@ height: 100%;
   right:490px;
   z-index: 10;
 
-
 }
+
+#star{
+  height: 100px;
+   width:100px;
+   animation-name:star;
+   animation-duration:10s;
+   animation-iteration-count:infinite;
+}
+@keyframes star{ image size??
+  from {}
+  to {background-color:yellow;
+      font-size:60px;
+      transform:rotateY(3600deg);
+      }
+  100% {background-color:blue;
+  color:white;}

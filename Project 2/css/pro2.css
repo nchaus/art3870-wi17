@@ -24,8 +24,17 @@ height: 100%;
 
 }
 
+.firstmessage{
+  margin-top: auto;
+  position: absolute;
+  width: 1000px;
+  top: 400px;
+  z-index: 10;
+  color: #666666;
+}
+
 #road{
-  position:fixed;
+  position:absolute;
   top:950px;
   bottom:1000px;
 }
@@ -101,6 +110,7 @@ height: 100%;
 
   @-keyframes owl {
     100% {background-position:-7724px;
+
      }
 }
 
@@ -112,6 +122,16 @@ height: 100%;
   width:500px;
   top:15px;
   left:-490px;
+
+}
+
+#cloud2{
+  position:fixed;
+  height:150px;
+  width:300px;
+  top:400px;
+  right:490px;
+  z-index: 10;
 
 
 }

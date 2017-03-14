@@ -1,0 +1,152 @@
+html, body {
+margin: 0 auto;
+padding: 0;
+height: 100%;
+}
+
+
+#wrapper{
+  width:10000px;
+  height:1000px;
+  position:relative;
+  margin:0 auto;
+  background: /*background START*/
+  background: rgba(35,117,190,1);
+  background: -moz-linear-gradient(left, rgba(35,117,190,1) 0%, rgba(27,75,156,1) 10%, rgba(15,9,102,1) 26%, rgba(44,17,85,1) 70%, rgba(67,30,121,1) 83%, rgba(70,32,126,1) 85%, rgba(44,17,85,1) 96%, rgba(44,17,85,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(35,117,190,1)), color-stop(10%, rgba(27,75,156,1)), color-stop(26%, rgba(15,9,102,1)), color-stop(70%, rgba(44,17,85,1)), color-stop(83%, rgba(67,30,121,1)), color-stop(85%, rgba(70,32,126,1)), color-stop(96%, rgba(44,17,85,1)), color-stop(100%, rgba(44,17,85,1)));
+  background: -webkit-linear-gradient(left, rgba(35,117,190,1) 0%, rgba(27,75,156,1) 10%, rgba(15,9,102,1) 26%, rgba(44,17,85,1) 70%, rgba(67,30,121,1) 83%, rgba(70,32,126,1) 85%, rgba(44,17,85,1) 96%, rgba(44,17,85,1) 100%);
+  background: -o-linear-gradient(left, rgba(35,117,190,1) 0%, rgba(27,75,156,1) 10%, rgba(15,9,102,1) 26%, rgba(44,17,85,1) 70%, rgba(67,30,121,1) 83%, rgba(70,32,126,1) 85%, rgba(44,17,85,1) 96%, rgba(44,17,85,1) 100%);
+  background: -ms-linear-gradient(left, rgba(35,117,190,1) 0%, rgba(27,75,156,1) 10%, rgba(15,9,102,1) 26%, rgba(44,17,85,1) 70%, rgba(67,30,121,1) 83%, rgba(70,32,126,1) 85%, rgba(44,17,85,1) 96%, rgba(44,17,85,1) 100%);
+  background: linear-gradient(to right, rgba(35,117,190,1) 0%, rgba(27,75,156,1) 10%, rgba(15,9,102,1) 26%, rgba(44,17,85,1) 70%, rgba(67,30,121,1) 83%, rgba(70,32,126,1) 85%, rgba(44,17,85,1) 96%, rgba(44,17,85,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2375be', endColorstr='#2c1155', GradientType=1 );
+
+  /*background COLOR END*/
+
+}
+
+.firstmessage{
+  margin-top: auto;
+  position: absolute;
+  width: 1000px;
+  top: 400px;
+  z-index: 10;
+  color: #666666;
+}
+
+#road{
+  position:absolute;
+  top:950px;
+  bottom:1000px;
+}
+
+#person{
+  position:absolute;
+  height: 90px;
+  width: 90px;
+  top:1000px;
+  left:4499px;
+
+}
+
+
+#one{/*purple car*/
+    position:absolute;
+    height:150px;
+    width:552px;
+    top:1000px;
+    left:50px;
+    right:4500px;
+  }
+
+
+#two{/*red car*/
+    position:absolute;
+    height:150px;
+    width:552px;
+    top:900px;
+    left:75px;
+    right:3550px;
+  }
+
+
+#three{/*green car*/
+    position:absolute;
+    height:150px;
+    width:552px;
+    top:1100px;
+    left:100px;
+    right:2500px;}
+/*passing cars END*/
+
+#truck{
+  position:absolute;
+  height:160px;
+  width:562px;
+  top:1000px;
+  right:4000px;
+}
+
+
+/*passing trees in the background START}*/
+
+#t1 #t2 #t3 #t4 {
+  position:absolute;
+  height:500px;
+  width:400px;
+  top:800px;
+  left:400px;
+    }
+
+#t4{
+    position:absolute;
+    top:800px;
+    left:3500px;
+    background: url("../images/t41.png") 0 0 no-repeat;
+    display:inline-block;
+    clear:both;
+    -webkit-animation: owl .8s steps(4) infinite;
+
+  }
+
+  @-keyframes owl {
+    100% {background-position:-7724px;
+
+     }
+}
+
+/*passing trees in the background END*/
+
+#cloud{
+  position:fixed;
+  height:250px;
+  width:500px;
+  top:15px;
+  left:-490px;
+
+}
+
+#cloud2{
+  position:fixed;
+  height:150px;
+  width:300px;
+  top:400px;
+  right:490px;
+  z-index: 10;
+
+}
+
+#star{
+  height: 100px;
+   width:100px;
+   animation-name:star;
+   animation-duration:10s;
+   animation-iteration-count:infinite;
+}
+@keyframes star{ image size??
+  from {}
+  to {background-color:yellow;
+      font-size:60px;
+      transform:rotateY(3600deg);
+      }
+  100% {background-color:blue;
+  color:white;}

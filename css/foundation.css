@@ -598,7 +598,7 @@ h6 {
     font-size: 1.25rem; }
   h6 {
     font-size: 1rem; } }
-/*
+
 a {
   line-height: inherit;
   color: #2ba6cb;
@@ -607,7 +607,7 @@ a {
   a:hover, a:focus {
     color: #258faf; }
   a img {
-    border: 0; }*/
+    border: 0; }
 
 hr {
   clear: both;

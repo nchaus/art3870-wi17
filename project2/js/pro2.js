@@ -30,11 +30,9 @@ $(window).scroll(function(){
      $("#t4").css({"left" : 800 + fromLeft * .8 + "px"});
 //dark cloud passing
      $("#cloud").css({"left" : -490 +fromLeft *0.12 + "px"});
-//light cloud2 coming from right
-     $("#cloud2").css({"display":"none" });
 
 // person reset
-     $("#person").css({"display":"none" });
+//   $("#person").css({"display":"none" });
 
 
    }
@@ -50,27 +48,44 @@ $(window).scroll(function(){
                       "left": 800 + fromLeft *1.1 + "px",
                              "display":"block"
                      });
-      $("#cloud2").css({"display":"none" });
+ } else {
 
-
+     $("#person").css({"left" : 4499 + fromLeft *1.1 + "px",
+                      "top":1199 - fromLeft * 0.08 + "px",
+                      "display":"none"
+                      });
+     $("#cloud").css({"top":100 - fromLeft * 0.01 + "px",
+                      "left": 800 + fromLeft *1.1 + "px",
+                             "display":"none"
+                     });
 
    }
 
-   console.log("Person begins rotates" + fromLeft + " times more astronomical!");
+
+
+
+
+
+
+
+
 
  if(fromLeft > 5001 && fromLeft < 7500){
+   console.log("Person begins rotates" + fromLeft + " times more astronomical!");
+
     $("#person").css({"left" : 4499 + fromLeft *1.1 + "px",
                       "top":1199 - fromLeft * 0.08 + "px",
                       "transform": "rotate(0 deg)",
                       "display":"block"
                       });
-    $("#cloud2").css({"display":"none" });
    }    else {
     $("#person").css({
         "top": 1199 - fromLeft * 0.08 + "px",
         "transform": "rotate("+ fromLeft+"deg)",
         "display":"block"
           });
+
+
 }
 
 
@@ -78,18 +93,20 @@ $(window).scroll(function(){
    if(fromLeft > 7500 && fromLeft < 8000 ){
      console.log("oh Queen your person should land on a cloud" + fromLeft + " times more astronomical!");
      $("#person").css({
-                      "left" : 50 + fromLeft *1.1 + "px",
+                      "left" : 500 + fromLeft *1.1 + "px", //controls person height acceleration after 7500px
                       "top":8000 - fromLeft  + "px",
-                      "transform": "rotate(0 deg)",
+                //      "transform": "rotate(0 deg)",
                       "display":"block"
                       });
-/*       $("#cloud2").css({"top": 600 + fromLeft * 0.01 + "px",
-                      "right": 700 + fromLeft *1.1 + "px",
+
+
+      $("#star").css({"left" : 7501 + fromLeft *0.1 + "px",
+                      "top":400 - fromLeft * 0.08 + "px",
+                      "transform": "rotate(0 deg)",
                       "display":"block"
-                     });
+                    });
 
 
-*/
    } else {
     $("#person").css({
         "left" : 200 + fromLeft *1.1 + "px",
@@ -97,6 +114,7 @@ $(window).scroll(function(){
         "transform": "rotate("+ fromLeft+"deg)",
         "display":"block"
           });
+
 
 }
 
@@ -107,20 +125,50 @@ $(window).scroll(function(){
                       "top":8000+ fromLeft,
                       "display":"block"
                       });
-
-    /* $("#cloud2").css({"top": 600 + fromLeft * 0.01 + "px",
-                       "right": 700 + fromLeft *1.1 + "px",
+    $("#star").css({
+                       "left" : 7000 + fromLeft *1.1 + "px",
+                       "top":8000+ fromLeft,
                        "display":"block"
-                                        });
-*/
-}
- if(fromRight < 7500 && fromRight > 8000 ){
-   $("#cloud2").css({"top": 600 + fromLeft * 0.01 + "px",
-                     "right": 700 + fromLeft *1.1 + "px",
-                     "display":"block"
-                                      });
+                                       });
 
 }
+
+
+
+
+
+ if(fromLeft > 4000 && fromLeft < 7000 || fromLeft > 7500 && fromLeft < 10000  ){
+
+ console.log("cloud2");
+ $("#cloud2").css({"top": 600 + "px",
+                  "right": -6900 + fromLeft  + "px",
+                  "display":"block"
+                                });
+
+} else {
+
+  $("#cloud2").css({"top": "600 px",
+                   "right": "1000 px",
+                   "display":"block"
+                                 });
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
        })//close.scroll

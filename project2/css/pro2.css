@@ -45,6 +45,7 @@ height: 100%;
   width: 90px;
   top:1000px;
   left:4499px;
+  display:none;
 
 }
 
@@ -96,7 +97,7 @@ height: 100%;
   top:800px;
   left:400px;
     }
-
+/*
 #t4{
     position:absolute;
     top:800px;
@@ -122,6 +123,7 @@ height: 100%;
   width:500px;
   top:15px;
   left:-490px;
+  z-index: 20;
 
 }
 
@@ -129,16 +131,39 @@ height: 100%;
   position:fixed;
   height:150px;
   width:300px;
-  top:400px;
+  top:600px;
   right:490px;
   z-index: 10;
-
+  display:none;
 }
 
 #star{
-  height: 100px;
-   width:100px;
-   animation-name:star;
+  position:fixed;
+  height:200px;
+  width:200px;
+  top:500px;
+  left:700px;
+    display:none;
+
+}
+  /*
+  opacity: 0;
+  animation-name: star;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+@@keyframes star {
+  100% {opacity:1}
+}
+*/
+
+/*
+#star{
+   height:600px;
+   width:600px;
+ }
+  animation-name:star;
    animation-duration:10s;
    animation-iteration-count:infinite;
 }
@@ -150,3 +175,39 @@ height: 100%;
       }
   100% {background-color:blue;
   color:white;}
+
+div.shootingstar {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  -webkit-transition: 3s ease-in;
+  -moz-transition: 3s ease-in;
+  -o-transition: 3s ease-in;
+  transition: 3s ease-in;
+}
+div.shootingstar div {
+  width: 92px;
+  height: 215px;
+  background: url(/images/rocket.gif) no-repeat;
+  -webkit-transition: 2s ease-in-out;
+  -moz-transition: 2s ease-in-out;
+  -o-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+}
+*/
+/* hover final state */
+/* #outerspace:hover div.shootingstar {
+  -webkit-transform: translate(540px,-200px);
+  -moz-transform: translate(540px,-200px);
+  -o-transform: translate(540px,-200px);
+  -ms-transform: translate(540px,-200px);
+  transform: translate(540px,-200px);
+}
+#outerspace:hover div.shootingstar div {
+  -webkit-transform: rotate(70deg);
+  -moz-transform: rotate(70deg);
+  -o-transform: rotate(70deg);
+  -ms-transform: rotate(70deg);
+  transform: rotate(70deg);
+}
+*/

@@ -1,0 +1,35 @@
+/* Nilufar's Animation 1 Stylesheet */
+
+
+body {
+  padding: 30px;
+  color:white;
+  background-color: #212d42;
+  position:absolute;
+
+
+}
+
+#title{
+  color:red;
+}
+
+
+
+/*functioning animation male symbol to female symbol----START*/
+.male-female {
+  //border: 1px solid red;
+  width: 700px;
+  height:864px;
+  background: url("../images/final.png") 0 0 no-repeat;
+  display:inline-block;
+  clear:both;
+  -webkit-animation: females 2s steps(11) infinite;
+
+}
+
+
+@-webkit-keyframes females {
+  100% {background-position:-7724px;
+   }
+/*functioning animation male symbol to female symbol ---END*/
